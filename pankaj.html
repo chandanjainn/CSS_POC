@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		function load_project1() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="project1.html" width=500 height=500></object>';
+		}
+		function load_project2() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="project2.html" width=500 height=500></object>';
+		}
+	</script>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-container">	
+			<div class="logo">
+				<a href="home.html">
+					<img src="images/gslablogo.png" alt="LOGO"  > 
+				</a>
+			</div>
+
+			<div class="header">
+				<h1>Manager's Portal</h1>
+			</div>
+
+
+			<div class="nav-icons">
+				<a href="#"><span><i class="fa fa-wrench"></i></a></span>
+				<a href="#"><span><i class="fa fa-user-circle-o"></i></a></span>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<article>
+		<div class="mgr-container">
+			<div class="manager-image">
+
+				<img src="images/download.png" alt="Avatar">
+				
+				<b><h2>Pankaj Khamkar</h2> 
+					<p>Associate Technical Manager</p> </b>
+				</div>
+
+				<div class="mgr-details">
+
+					<div class="mgr-details-container">
+						<div class="project"><b><p>Projects Under Pankaj</p></b></div>
+						<button class="project-card" onclick="load_project1()">CICD</a></button>
+						<button class="project-card" onclick="load_project2()">X1D</a></button>
+						
+						<div id="content">
+						</div>	
+
+					</div>
+
+				</div>
+			</article>
+
+		</body>
+		</html>

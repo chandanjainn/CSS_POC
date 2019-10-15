@@ -5,16 +5,18 @@ body {
 	flex-direction: column;
 }
 
-.project-details {
-	overflow: hidden;
-}
-
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 20px;
 	margin-top: 80px;
 	justify-content: center;
+}
+
+.flex-container > div {
+	padding: 20px;
+	margin: 25px;
+	transition: 1s;
 }
 
 .nav-container {
@@ -55,18 +57,12 @@ span {
 	font-size: 24px;
 }
 
-.flex-container > div {
-	padding: 20px;
-	margin: 25px;
-	transition: 1s;
-}
-
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*red-green-blue-alpha(opacity -> 0-1)*/
 }
 
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 .mgr-container {
@@ -74,20 +70,6 @@ span {
 	flex-wrap: wrap;
 	padding: 20px;
 	margin: 25px;
-}
-
-.project-card {
-	padding: 15px 15px;
-	text-decoration: none !important;
-	cursor: pointer;
-	border-radius: 15px;
-	margin: 15px;
-	font-size: 30px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-a:visited {
-	color: blue;
 }
 
 .mgr-image {
@@ -103,6 +85,34 @@ a:visited {
 	flex-wrap: wrap;
 	padding: 20px;
 	margin: 25px;
+}
+
+.mgr-details-container > div {
+	padding: 5px;
+	margin: 10px;
+	align-items: center;
+}
+
+.project-card {
+	padding: 15px 15px;
+	text-decoration: none !important;
+	cursor: pointer;
+	border-radius: 15px;
+	margin: 15px;
+	font-size: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project {
+	align-self: center;
+}
+
+.project-details {
+	overflow: hidden;
+}
+
+a:visited {
+	color: blue;
 }
 
 th {
@@ -124,14 +134,4 @@ p {
 ul {
 	padding-inline-start: 10px;
 	list-style-type: square;
-}
-
-.project {
-	align-self: center;
-}
-
-.mgr-details-container > div {
-	padding: 5px;
-	margin: 10px;
-	align-items: center;
 }
